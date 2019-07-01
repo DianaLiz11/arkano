@@ -1,0 +1,36 @@
+header{
+  background-color: #3396FF;
+  color: #FFFFFF;
+  height: 2.5em;
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+}
+
+nav{
+  background-color: #363232;
+  color: #FAF4F4;
+}
+
+a{
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+a:hover{
+  background-color: #1A1919;
+  color: white;
+}
+
+body{
+  background-color: #F0E8E8;
+}
+
+#form-body{
+  background-color: white;
+  border-top: 4px solid #639EDF;
+}
+
+#form-button{
+  background-color: #639EDF
+}

@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <!-- <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico" /> -->
+    <link rel="stylesheet" href="style.css" />
+    <title>Arkano</title>
+  </head>
+  <body>
+    <header>
+      <span class="ml-4">e-Ventas</span>
+    </header>
+    <main>
+      <div class="row">
+        <!-- Nav -->
+        <nav class="col-sm-4 col-md-3 vh-100">
+          <div class="container">
+            <div class="row mt-2">
+              <div class="col-sm-4">
+                <figure class="figure">
+                  <img class="img-fluid rounded-circle" src="assets/images/perfil.jpeg" alt="perfil-photo">
+                </figure>
+              </div>
+              <div class="col-sm-8">
+                <label>User name</label><br>
+                <img src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeD0iMHB4IiB5PSIwcHgiIHZpZXdCb3g9IjAgMCA0MjYuNjY3IDQyNi42NjciIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDQyNi42NjcgNDI2LjY2NzsiIHhtbDpzcGFjZT0icHJlc2VydmUiIHdpZHRoPSIxNnB4IiBoZWlnaHQ9IjE2cHgiPgo8cGF0aCBzdHlsZT0iZmlsbDojNkFDMjU5OyIgZD0iTTIxMy4zMzMsMEM5NS41MTgsMCwwLDk1LjUxNCwwLDIxMy4zMzNzOTUuNTE4LDIxMy4zMzMsMjEzLjMzMywyMTMuMzMzICBjMTE3LjgyOCwwLDIxMy4zMzMtOTUuNTE0LDIxMy4zMzMtMjEzLjMzM1MzMzEuMTU3LDAsMjEzLjMzMywweiBNMTc0LjE5OSwzMjIuOTE4bC05My45MzUtOTMuOTMxbDMxLjMwOS0zMS4zMDlsNjIuNjI2LDYyLjYyMiAgbDE0MC44OTQtMTQwLjg5OGwzMS4zMDksMzEuMzA5TDE3NC4xOTksMzIyLjkxOHoiLz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPC9zdmc+Cg==" /><label class="ml-2">Status</label>
+              </div>
+            </div>
+          </div>
+          <div class="">
+            <a class="nav-link" data-toggle="collapse" href="#v-pills-tab" role="button" aria-expanded="false" aria-controls="v-pills-tab">
+              <i class="fas fa-chess-board mx-2"></i>Dashboard <i class="fa fa-caret-down mx-2"></i>
+            </a>
+          </div>
+          <div class="nav flex-column collapse" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+            <a class="nav-link" id="v-pills-register-tab" data-toggle="pill" href="#v-pills-register" role="tab" aria-controls="v-pills-register" aria-selected="true">Registar</a>
+            <a class="nav-link" id="v-pills-dashboards-tab" data-toggle="pill" href="#v-pills-dashboards" role="tab" aria-controls="v-pills-dashboards" aria-selected="false">Dashboards</a>
+          </div>
+        </nav>
+        <!-- content -->
+        <section class="col-sm-8 col-md-9">
+          <div class="tab-content" id="v-pills-tabContent">
+            <!-- *******************ALTA DE DATOS********************************** -->
+            <div class="tab-pane fade" id="v-pills-register" role="tabpanel" aria-labelledby="v-pills-register-tab">
+              <!-- Formulario de Registro -->
+              <form class="">
+                <div class="form-group d-inline-flex">
+                  <label for="board-name" class="col-form-label">Dashboard</label>
+                  <input id="board-name" type="text" required class="form-control-plaintext ml-4" placeholder="Nombre del Dashboard">
+                </div>
+                <div id="form-body" class="col-sm-10 offset-sm-1 col-md-8 offset-md-2">
+                  <h5 class="my-3">Datos en Dashboard</h5>
+                  <div class="form-group">
+                    <label for="nuevas-compras">Cantidad de nuevas compras</label>
+                    <input id="nuevas-compras" type="number" class="form-control" required placeholder="Nuevas compras">
+                  </div>
+                  <div class="form-group">
+                    <label for="incremento-compras">Incremento de compras</label>
+                    <input id="incremento-compras" type="number" class="form-control" required placeholder="Incremento de compras">
+                  </div>
+                  <div class="form-group">
+                    <label for="nuevos-usuarios">Cantidad nuevos usuarios</label>
+                    <input id="nuevos-usuarios" type="number" class="form-control" required placeholder="Nuevos usuarios">
+                  </div>
+                  <div class="form-group">
+                    <label for="nuevas-visitas">Cantidad nuevas visitas</label>
+                    <input id="nuevas-visitas" type="number" class="form-control" required placeholder="Nuevas visitas">
+                  </div>
+                  <div class="d-flex justify-content-end">
+                    <button id="form-button" type="submit" class="btn btn-primary my-3">Ingresar Datos</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+            <!-- ************************MUESTRA TABLEROS*********************** -->
+            <div class="tab-pane fade" id="v-pills-dashboards" role="tabpanel" aria-labelledby="v-pills-dashboards-tab">
+              <div class="d-inline-flex my-3">
+                <label>Dashboard</label>
+                <span id="board-name-show" class="ml-4"></span>
+              </div>
+              <div class="d-flex flex-wrap justify-content-between">
+                <!-- CARD COMPRAS -->
+                <div class="card text-white bg-info mb-3" style="max-width: 12rem;">
+                  <div class="card-body">
+                    <div class="row">
+                      <div class="col-7">
+                        <h2 id="title-shopping" class="card-title"></h2>
+                        <p class="card-text">Nuevas Compras</p>
+                      </div>
+                      <figure class="col-5">
+                        <img class="img-fluid" src="assets/images/bag.png" alt="bag">
+                      </figure>
+                    </div>
+                  </div>
+                  <div class="card-header">Más Info<i class="fas fa-plus-circle mx-2"></i></div>
+                </div>
+                <div class="card text-white bg-success mb-3" style="max-width: 12rem;">
+                  <div class="card-body">
+                    <div class="row">
+                      <div class="col-7">
+                        <h2 id="title-incremet" class="card-title"></h2>
+                        <p class="card-text">Incremento de Compras</p>
+                      </div>
+                      <figure class="col-5">
+                        <img class="img-fluid" src="assets/images/bar-chart.png" alt="bar-chart">
+                      </figure>
+                    </div>
+                  </div>
+                  <div class="card-header">Más Info<i class="fas fa-plus-circle mx-2"></i></div>
+                </div>
+                <div class="card text-white bg-warning mb-3" style="max-width: 12rem;">
+                  <div class="card-body">
+                    <div class="row">
+                      <div class="col-7">
+                        <h2 id="title-users" class="card-title"></h2>
+                        <p class="card-text">Nuevos Usuarios</p>
+                      </div>
+                      <figure class="col-5">
+                        <img class="img-fluid" src="assets/images/add-user.png" alt="bar-chart">
+                      </figure>
+                    </div>
+                  </div>
+                  <div class="card-header">Más Info<i class="fas fa-plus-circle mx-2"></i></div>
+                </div>
+                <div class="card text-white bg-danger mb-3" style="max-width: 12rem;">
+                  <div class="card-body">
+                    <div class="row">
+                      <div class="col-7">
+                        <h2 id="title-visit" class="card-title"></h2>
+                        <p class="card-text">Nuevas Visitas</p>
+                      </div>
+                      <figure class="col-5">
+                        <img class="img-fluid" src="assets/images/pie-chart.png" alt="bar-chart">
+                      </figure>
+                    </div>
+                  </div>
+                  <div class="card-header">Más Info<i class="fas fa-plus-circle mx-2"></i></div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
