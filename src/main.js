@@ -9,6 +9,12 @@ const newShoppingForm = document.getElementById('nuevas-compras');
 const incrementShoppingForm = document.getElementById('incremento-compras');
 const newUsersForm = document.getElementById('nuevos-usuarios');
 const newVisitsForm = document.getElementById('nuevas-visitas');
+const city = document.getElementById('city');
+const description = document.getElementById('description');
+const temp = document.getElementById('temp');
+const tempMax = document.getElementById('temp-max');
+const tempMin = document.getElementById('temp-min');
+
 let data={};
 
 const obtainData = () =>{
@@ -52,11 +58,17 @@ const clearBox = ()=> {
 }
 
 const obtainWeather = () => {
-  fetch('https://api.openweathermap.org/data/2.5/weather?q=London,uk&appid=aff9e21e441bf604ab0f9e874f13d734')
+  fetch('https://api.openweathermap.org/data/2.5/weather?q=Mexico City,mx&appid=aff9e21e441bf604ab0f9e874f13d734')
   .then(response => response.json())
   .then(dataWeather => {
     console.log(dataWeather);
-  });
+    console.log(dataWeather.name, dataWeather["main"].temp);
+    city.innerHTML = dataWeather.name;
+    description.innerHTML = dataWeather["weather"][0].main;
+    temp.innerHTML = 'Temp: ' + dataWeather["main"].temp + ' °F';
+    tempMax.innerHTML = 'Max: ' + dataWeather["main"].temp_max + ' °F';
+    tempMin.innerHTML = 'Min: ' + dataWeather["main"].temp_min + ' °F';
+    });
 };
 
 register.addEventListener('click', () =>{

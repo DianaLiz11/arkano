@@ -1,10 +1,10 @@
 header{
   background-color: #3396FF;
   color: #FFFFFF;
-  height: 2.5em;
-  display: flex;
-  /* justify-content: center; */
-  align-items: center;
+  height: 3.5em;
+  /* display: flex;
+  /* justify-content: center;
+  align-items: center; */
 }
 
 nav{
