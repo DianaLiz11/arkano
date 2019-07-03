@@ -51,13 +51,13 @@ const clearBox = ()=> {
   newVisitsForm.value = 0;
 }
 
-// const obtainWeather = () => {
-//   fetch('api.openweathermap.org/data/2.5/weather?q=Mexico City, mx')
-//   .then(response => response.json())
-//   .then(dataWeather => {
-//     console.log(dataWeather);
-//   });
-// };
+const obtainWeather = () => {
+  fetch('https://api.openweathermap.org/data/2.5/weather?q=London,uk&appid=aff9e21e441bf604ab0f9e874f13d734')
+  .then(response => response.json())
+  .then(dataWeather => {
+    console.log(dataWeather);
+  });
+};
 
 register.addEventListener('click', () =>{
   if(validateBox()){
